@@ -1,0 +1,12 @@
+@media screen (min-width: 375px) {
+  body {
+    background: #e5e5e5;
+  }
+
+  header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+}
