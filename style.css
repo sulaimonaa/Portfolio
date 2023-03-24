@@ -74,6 +74,7 @@
     line-height: 52px;
     color: #172b4d;
     font-style: normal;
+    margin: 0;
   }
 
   .intro_summary {
@@ -86,23 +87,31 @@
   }
 
   .connect_social {
+    margin-top: 12px;
+  }
+
+  .connect_social a {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: #7f8cff;
     font-style: normal;
-    margin-top: 12px;
+    text-decoration: none;
   }
 
   .social_icon_links {
-    display: flex;
-    flex-direction: row;
-    flex: none;
-    flex-grow: 0;
-    order: 0;
-    align-items: center;
     height: 20px;
     margin-top: 12px;
+  }
+
+  .social_icon_links ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social_icon_links ul li {
+    list-style: none;
   }
 
   .social_icon_links a img {
