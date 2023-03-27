@@ -121,4 +121,224 @@
   .social_icon_links a img:first-child {
     margin-left: 0;
   }
+
+  .work {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 88px;
+    padding: 114px 24px;
+  }
+
+  .work_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    flex: none;
+    flex-grow: 0;
+    order: 0;
+  }
+
+  .portfolio_work_img {
+    width: 100%;
+  }
+
+  .project_desc {
+    width: 100%;
+  }
+
+  .project_title {
+    color: #172b4d;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin: 0;
+  }
+
+  .client {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .client h4 {
+    color: #7a869a;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: capitalize;
+  }
+
+  .client h4.active {
+    color: #344563;
+    text-transform: uppercase;
+  }
+
+  .counter {
+    background: #c1c7d0;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+  }
+
+  .project_summary {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .project_lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin-top: 24px;
+  }
+
+  .lang_list {
+    background: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px;
+    line-height: 16px;
+    border: none;
+    color: #6070ff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    list-style: none;
+  }
+
+  .call_to_action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .call_to_action button {
+    line-height: 24px;
+    background: transparent;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .call_to_action button:enabled {
+    color: #396df2;
+    border: 1px solid #396df2;
+    background: transparent;
+  }
+
+  .call_to_action button:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .call_to_action button:visited {
+    color: #fff;
+    background: #396df2;
+  }
+
+  .call_to_action button:disabled {
+    color: #344563;
+    border: 1px solid #344563;
+  }
+
+  .about {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 114px 24px;
+    border-top-right-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .about_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #172b4d;
+    margin: 0;
+  }
+
+  .about_summary {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #344563;
+    margin-top: 12px;
+  }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    padding: 0 12px;
+  }
+
+  .tech_lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 72px;
+    border-bottom: 1px solid #dfe1e6;
+    width: 100%;
+  }
+
+  .tech_lang:first-child {
+    border: none;
+  }
+
+  .tech_lang h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .tech_lang_wrap {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tech_lang_list {
+    margin-top: 12px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 12px;
+  }
+
+  .tech_lang_list h4 {
+    color: #253858;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
 }
