@@ -269,4 +269,54 @@
     font-weight: 400;
     color: #344563;
   }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    padding: 0 12px;
+  }
+
+  .tech_lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 72px;
+    border-bottom: 1px solid #dfe1e6;
+    width: 100%;
+  }
+
+  .tech_lang:first-child {
+    border: none;
+  }
+
+  .tech_lang h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .tech_lang_wrap {
+    width: 100%;
+  }
+
+  .tech_lang_list {
+    margin-top: 12px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 12px;
+  }
+
+  .tech_lang_list h4 {
+    color: #253858;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
 }
