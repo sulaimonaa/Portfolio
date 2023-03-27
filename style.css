@@ -329,8 +329,7 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 0 12px;
     gap: 12px;
   }
 
