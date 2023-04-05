@@ -398,6 +398,21 @@
     color: #6070ff;
   }
 
+  .contact-form ul li input[type='submit']:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .contact-form ul li input[type='submit']:pressed {
+    background: #2230d2;
+    color: #fff;
+  }
+
+  .contact-form ul li input[type='submit']:disabled {
+    background: #5e6c84;
+    color: #5e6c84;
+  }
+
   .contact-form ul li textarea {
     border-radius: 8px;
     margin-bottom: 20px;
