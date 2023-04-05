@@ -345,18 +345,26 @@
   .contact {
     width: 100%;
     height: 779px;
-    background-image: url(./images/contact_bg.png);
+    background: #fff;
     background-size: cover;
   }
 
   .contact-wrap {
+    position: relative;
     height: 779px;
-    background-image: url(./images/contact_shapes.png);
+    background-image: url(./images/contact_bg.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 24px;
+  }
+
+  .contact-shapes-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 745px;
   }
 
   .contact-title {
@@ -403,7 +411,7 @@
     color: #fff;
   }
 
-  .contact-form ul li input[type='submit']:pressed {
+  .contact-form ul li input[type='submit']:visited {
     background: #2230d2;
     color: #fff;
   }
