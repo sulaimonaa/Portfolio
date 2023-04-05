@@ -198,22 +198,23 @@
                 that needs coding.
                 I’d love to help with it!
             </p>
-            <form action="/my-handling-form-page" method="post" class="contact-form">
+            <form action="https://formspree.io/f/xwkjrjye" method="post" class="contact-form">
                 <ul>
                     <li>
-                        <input type="text" id="name" name="user_name" />
+                        <input type="text" id="name" name="user_name" value="Lorem Ipsum" maxlength="30" />
                     </li>
                     <li>
-                        <input type="email" id="mail" name="user_email" />
+                        <input type="email" id="mail" name="user_email" value="loremipsum@gmail.com"  required />
                     </li>
                     <li>
-                        <textarea id="msg" name="user_message"></textarea>
+                        <textarea id="msg" name="user_message" maxlength="500">Write your message here...</textarea>
                     </li>
                     <li>
                         <input type="submit" value="Get in touch">
                     </li>
                 </ul>
             </form>
+            <div class="contact-bt-line"></div>
         </div>
     </section>
 </body>
