@@ -536,6 +536,10 @@
     gap: 0;
   }
 
+  .about_title {
+    margin-top: 13px;
+  }
+
   .tech {
     margin: 0;
   }
@@ -559,6 +563,7 @@
     padding: 12px;
   }
 
+  /* Contact styles goes here */
   .contact-wrap {
     background-image: url(images/contact-form-background-shape-desktop.svg);
     height: 846px;
@@ -587,6 +592,8 @@
   .contact-form ul li input[type='submit'] {
     border-radius: 8px;
     width: 142px;
+    text-align: center;
+    padding: 0;
   }
 
   .contact-bt-line {
