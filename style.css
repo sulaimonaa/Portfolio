@@ -558,4 +558,10 @@
     margin: 0;
     padding: 12px;
   }
+  .portfolio_work_img {
+    transition: transform 1s;
+  }
+  .portfolio_work_img:hover {
+    transform: scale(1.1);
+  }
 }
