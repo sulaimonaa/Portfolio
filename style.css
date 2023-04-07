@@ -47,6 +47,10 @@
     color: #6070ff;
   }
 
+  .navbar {
+    display: none;
+  }
+
   .header_icon {
     float: inline-end;
   }
@@ -448,5 +452,144 @@
     width: 33.333%;
     height: 5px;
     margin: 5px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: #f7f7f7;
+  }
+
+  header {
+    height: 72px;
+    background: #fff;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header_icon {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header_headline_section {
+    border-bottom-left-radius: 80px;
+  }
+
+  .headline {
+    background-image: url(./images/header-shapes-dk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+
+  /* Introduction */
+  .intro-container {
+    width: 70%;
+  }
+
+  .intro_text {
+    width: 330px;
+  }
+
+  /* work section starts here */
+  .work_card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+  }
+
+  .project_desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* About the dev */
+  .about-wrap {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 0;
+  }
+
+  .tech {
+    margin: 0;
+  }
+
+  .tech_category {
+    padding-left: 24px;
+  }
+
+  .tech_lang_wrap {
+    display: flex;
+    gap: 12px;
+  }
+
+  .tech_lang_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    flex-basis: 120px;
+    margin: 0;
+    padding: 12px;
+  }
+
+  .contact-wrap {
+    background-image: url(images/contact-form-background-shape-desktop.svg);
+    height: 846px;
+  }
+
+  .contact-container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form ul li input {
+    width: 100%;
+    padding: 1px 16px;
+    border-radius: 0;
+  }
+
+  .contact-form ul li textarea {
+    border-radius: 0;
+  }
+
+  .contact-form ul li input[type='submit'] {
+    border-radius: 8px;
+    width: 142px;
+  }
+
+  .contact-bt-line {
+    display: none;
   }
 }
