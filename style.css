@@ -21,7 +21,8 @@
     width: 100%;
     height: 48px;
     background: #fff;
-    position: relative;
+    position: fixed;
+    z-index: 1;
     display: flex;
     align-items: center;
   }
@@ -388,6 +389,7 @@
 
   .contact-form {
     width: 303px;
+    margin: 0 auto;
   }
 
   .contact-form ul {
@@ -407,7 +409,7 @@
     width: 100%;
     height: 48px;
     border: 1px solid #cfd8dc;
-    padding-left: 16px;
+    padding: 1px 16px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -536,6 +538,10 @@
     gap: 0;
   }
 
+  .about_title {
+    margin-top: 13px;
+  }
+
   .tech {
     margin: 0;
   }
@@ -559,12 +565,67 @@
     padding: 12px;
   }
 
+  /* Contact styles goes here */
+  .contact-wrap {
+    background-image: url(images/contact-form-background-shape-desktop.svg);
+    height: 846px;
+  }
+
+  .contact-container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form ul li input {
+    width: 100%;
+    padding: 1px 16px;
+    border-radius: 0;
+  }
+
+  .contact-form ul li textarea {
+    border-radius: 0;
+  }
+
+  .contact-form ul li input[type='submit'] {
+    border-radius: 8px;
+    width: 142px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .contact-bt-line {
+    display: none;
+  }
+
   /* Interactions are here */
   .portfolio_work_img {
     transition: transform 1s;
   }
 
   .portfolio_work_img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+  }
+
+  .contact-desc {
+    transition: transform 1s;
+  }
+
+  .contact-desc:hover {
+    transform: translate(20px, 0);
+  }
+
+  .header_logo {
+    animation: rotate 2s;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotateX(360deg);
+    }
   }
 }
