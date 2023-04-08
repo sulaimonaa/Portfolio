@@ -601,4 +601,31 @@
   .contact-bt-line {
     display: none;
   }
+
+  /* Interactions are here */
+  .portfolio_work_img {
+    transition: transform 1s;
+  }
+
+  .portfolio_work_img:hover {
+    transform: scale(1.05);
+  }
+
+  .contact-desc {
+    transition: transform 1s;
+  }
+
+  .contact-desc:hover {
+    transform: translate(25px, 0);
+  }
+
+  .header_logo {
+    animation: rotate 2s;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotateX(360deg);
+    }
+  }
 }
