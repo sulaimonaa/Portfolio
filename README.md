@@ -85,9 +85,9 @@ Run this commands:
 
 ### Deployment
 
-You can deploy this project using:
-
-  Github Page
+You can access this project using the link below:
+  
+  <a href="https://sulaimonaa.github.io/Portfolio/">Check out my Portfolio</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
