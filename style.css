@@ -418,7 +418,7 @@
   .contact-form ul li input[type='submit'] {
     width: 110px;
     color: #6070ff;
-    padding-left: 0;
+    padding: 0;
     font-size: 14px;
   }
 
@@ -502,7 +502,7 @@
 
   .headline {
     background-image: url(./images/header-shapes-dk.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
