@@ -1,6 +1,6 @@
 let navBtn = document.querySelector('#menuIcon');
 let navMenu = document.querySelector('.navbar');
-let navItem = document.querySelector('.nav-item');
+let navItem1 = document.querySelector('.nav-item1');
 let closeMenu = document.querySelector('#closeBtn');
 
 navBtn.addEventListener('click', function () {
@@ -16,6 +16,6 @@ closeMenu.addEventListener('click', function(){
     navMenu.className = 'navbar'
 })
 
-navItem.addEventListener('click', function(){
+navItem1.addEventListener('click', function(){
     navMenu.className = 'navbar'
 })
