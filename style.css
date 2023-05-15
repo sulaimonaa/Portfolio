@@ -49,7 +49,7 @@
   }
 
   .navbar {
-    display: none; 
+    display: none;
   }
 
   /* menu toggle styling */
@@ -59,11 +59,11 @@
     left: 0;
     height: 100vh;
     width: 100%;
-    background: #6070FF;
+    background: #6070ff;
     background-blend-mode: multiply;
     margin: 0;
     padding: 0;
-    opacity: .8;
+    opacity: 0.8;
     display: flex;
     flex-direction: column;
     gap: 40px;
