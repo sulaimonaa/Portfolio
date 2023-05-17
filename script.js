@@ -1,6 +1,5 @@
 const navBtn = document.querySelector('#menuIcon');
 const navMenu = document.querySelector('.navbar');
-const navItem = document.querySelector('.nav-item');
 const closeMenu = document.querySelector('#closeBtn');
 
 navBtn.addEventListener('click', () => {
@@ -16,6 +15,6 @@ closeMenu.addEventListener('click', () => {
   navMenu.className = 'navbar';
 });
 
-navItem.addEventListener('click', () => {
-  navMenu.classList.toggle('navbar');
+navMenu.addEventListener('click', () => {
+  navMenu.className = 'navbar';
 });
