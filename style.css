@@ -83,6 +83,14 @@
     margin-left: 20px;
   }
 
+  .blur-bg {
+    filter: blur(2px);
+  }
+
+  .no-blur {
+    filter: none;
+  }
+
   .nav-item {
     text-decoration: none;
     color: #fff;
