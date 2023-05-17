@@ -26,19 +26,19 @@ navBtn.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
   navMenu.className = 'navbar';
   headlineSec.classList.remove('blur-bg');
-    headerLogo.classList.remove('blur-bg');
-    headerIcon.classList.remove('blur-bg');
-    workSection.classList.remove('blur-bg');
-    aboutSection.classList.remove('blur-bg');
-    contactSection.classList.remove('blur-bg');
+  headerLogo.classList.remove('blur-bg');
+  headerIcon.classList.remove('blur-bg');
+  workSection.classList.remove('blur-bg');
+  aboutSection.classList.remove('blur-bg');
+  contactSection.classList.remove('blur-bg');
 });
 
 navMenu.addEventListener('click', () => {
   navMenu.className = 'navbar';
   headlineSec.classList.remove('blur-bg');
-    headerLogo.classList.remove('blur-bg');
-    headerIcon.classList.remove('blur-bg');
-    workSection.classList.remove('blur-bg');
-    aboutSection.classList.remove('blur-bg');
-    contactSection.classList.remove('blur-bg');
+  headerLogo.classList.remove('blur-bg');
+  headerIcon.classList.remove('blur-bg');
+  workSection.classList.remove('blur-bg');
+  aboutSection.classList.remove('blur-bg');
+  contactSection.classList.remove('blur-bg');
 });

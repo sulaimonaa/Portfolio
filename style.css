@@ -84,7 +84,7 @@
   }
 
   .blur-bg {
-    filter: blur(2px);
+    filter: blur(4px);
   }
 
   .no-blur {
