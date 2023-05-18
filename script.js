@@ -132,7 +132,9 @@ projects.forEach((project, index) => {
         <img class='' src='${project.featureImg}' alt='Recent Work'>
     </div>
     <div class='detail-card-body'>
-        <p class='paragraph'>${project.projectDescription}</p>
+      <div>
+        <p class='paragraph'>${project.projectDescription}</p>      
+      </div>
         <div class='detail-card-body-right'>
             <ul class='d-flex detail-card-body-tags'>
                 ${languages}
