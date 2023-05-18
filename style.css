@@ -308,6 +308,8 @@
 
   .detail-card--show {
     display: block;
+    justify-content: center;
+    align-items: center;
     z-index: 15;
     height: 100%;
     width: 100%;
@@ -324,7 +326,6 @@
   .detail-card-inner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: #172b4d;
     background-color: #fff;
     border: 1px solid #dfe1e6;
@@ -657,6 +658,11 @@
     height: 5px;
     margin: 5px auto;
   }
+
+  #error-div {
+    color: red;
+    margin: 10px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -760,7 +766,6 @@
 
   .detail-card-inner {
     gap: 15px;
-    margin: 3% 15%;
   }
 
   .detail-card-body-left {
