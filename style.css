@@ -294,6 +294,13 @@
   }
 
   /* Detail Section Starts Here */
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .blur-modal {
+    filter: blur(3px);
+  }
 
   .detail-card {
     display: none;
@@ -322,7 +329,7 @@
     background-color: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    margin: 10%;
+    margin: 5%;
     padding: 1em;
     gap: 8px;
   }
@@ -706,10 +713,6 @@
     filter: none;
   }
 
-  .blur-modal {
-    filter: blur(3px);
-  }
-
   .nav-list {
     list-style: none;
   }
@@ -754,7 +757,7 @@
 
   .detail-card-inner {
     gap: 15px;
-    margin: 15%;
+    margin: 12%;
   }
 
   .detail-card-body-left {
