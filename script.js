@@ -108,23 +108,25 @@ projects.forEach((project, index) => {
 // Modal Popup Starts Here
 const body = document.getElementById('body');
 projects.forEach((project, index) => {
-  const languages = project.projectLang.map((lang) => `<li class='detail-card-body-tag'>${lang}</li>`).join('');
+  const languages = project.projectLang.map((lang) => `<li class='lang_list'>${lang}</li>`).join('');
   const modal = document.createElement('div');
   modal.classList.add('detail-card');
   modal.id = `detail-card-${index + 1}`;
   modal.innerHTML = `<div class='detail-card-inner'>
-    <div class='d-flex detail-card-header'>
-        <div>
+    <div class='detail-card-header'>
+        <div class='detail-card-header1'>
             <h3 class='detail-card-heading'>${project.projectName}</h3>
-            <div class='d-flex works-card-client'>
-                <p class='paragraph'>${project.projectDetails.orgnization}</p>
-                <i class='fa-solid fa-circle works-card-client-counter'></i>
-                <p class='works-card-client-role paragraph'>${project.projectDetails.type}</p>
-                <i class='fa-solid fa-circle works-card-client-counter'></i>
-                <p class='works-card-client-year paragraph'>${project.projectDetails.year}</p>
+            <img src='./icons/close-icon2.png'  id='detail-card-close-${index + 1}' alt='close btn icon'>
+        </div>
+        <div>
+            <div class='works-card-client'>
+                <h4 class='active'>${project.projectDetails.orgnization}</h4>
+                <div class="counter"></div>
+                <h4>${project.projectDetails.type}</h4>
+                <div class="counter"></div>
+                <h4>${project.projectDetails.year}</h4>
             </div>
         </div>
-        <i id='detail-card-close-${index + 1}' class='fa-solid fa-xmark detail-card-cross-icon'></i>
     </div>
     <div class='detail-card-display-img-container'>
         <img class='' src='${project.featureImg}' alt='Recent Work'>
