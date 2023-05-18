@@ -305,7 +305,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     right: 0;
     bottom: 0;
@@ -317,13 +317,14 @@
   .detail-card-inner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: #172b4d;
     background-color: #fff;
     border: 1px solid #dfe1e6;
-    border-radius: 1em;
-    justify-content: center;
+    border-radius: 16px;
     margin: 10%;
     padding: 1em;
+    gap: 8px;
   }
 
   .detail-card-header {
@@ -339,7 +340,7 @@
 
   .detail-card-heading {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 52px;
     color: #091e42;
     margin: 0;
@@ -357,27 +358,23 @@
   }
 
   .works-card-client h4.active {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     color: #344563;
     line-height: 20px;
   }
 
   .works-card-client h4 {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     color: #7a869a;
     line-height: 20px;
   }
 
-  .detail-card-cross-icon {
-    padding: 0;
-  }
 
   .detail-card-display-img-container {
     width: 100%;
     height: auto;
-    margin: 2em 0;
   }
 
   .detail-card-display-img-container > img {
@@ -385,8 +382,13 @@
   }
 
   .detail-card-body {
-    margin: 2em 0;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .detail-card-body-left{
+    font-size: 15px;
   }
 
   .detail-card-body-tags {
@@ -420,6 +422,7 @@
     font-size: 15px;
     padding: 0.5em 0.75em;
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 8px;
     background: none;
@@ -703,6 +706,10 @@
     filter: none;
   }
 
+  .blur-modal {
+    filter: blur(3px);
+  }
+
   .nav-list {
     list-style: none;
   }
@@ -745,6 +752,11 @@
     gap: 0;
   }
 
+  .detail-card-inner {
+    gap: 15px;
+    margin: 15%;
+  }
+
   .detail-card-body-left {
     width: 70%;
   }
@@ -754,6 +766,14 @@
     padding: 0 15px;
   }
 
+  .detail-card-body {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .works-card-client h4.active, .works-card-client h4 {
+    font-size: 15px;
+  }
   /* .work_card:nth-child(2), .work_card:nth-child(4) {
     display: flex;
     flex-direction: row-reverse;

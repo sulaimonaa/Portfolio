@@ -169,40 +169,58 @@ const detailCard1 = document.getElementById('detail-card-1');
 const detailCard2 = document.getElementById('detail-card-2');
 const detailCard3 = document.getElementById('detail-card-3');
 const detailCard4 = document.getElementById('detail-card-4');
+const contentWrap = document.querySelector('.content-wrap');
+const bodyScroll = document.querySelector('#body');
 
 // Card 1 popup opening closing starts Here
 openProjectDetails1.addEventListener('click', () => {
   detailCard1.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
 });
 detailCardClose1.addEventListener('click', () => {
   detailCard1.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
 });
 // Card 1 popup opening closing ends Here
 
 // Card 2 popup opening closing starts Here
 openProjectDetails2.addEventListener('click', () => {
   detailCard2.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
 });
 detailCardClose2.addEventListener('click', () => {
   detailCard2.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
 });
 // Card 2 popup opening closing ends Here
 
 // Card 3 popup opening closing starts Here
 openProjectDetails3.addEventListener('click', () => {
   detailCard3.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
 });
 detailCardClose3.addEventListener('click', () => {
   detailCard3.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
 });
 // Card 3 popup opening closing ends Here
 
 // Card 4 popup opening closing starts Here
 openProjectDetails4.addEventListener('click', () => {
   detailCard4.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
 });
 detailCardClose4.addEventListener('click', () => {
   detailCard4.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
 });
 // Card 4 popup opening closing ends Here
 // Adding Dynamic Data to Works ul ends Here
