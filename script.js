@@ -42,3 +42,203 @@ navMenu.addEventListener('click', () => {
   aboutSection.classList.remove('blur-bg');
   contactSection.classList.remove('blur-bg');
 });
+
+// Adding Dynamic Data to Works starts Here
+const projects = [{
+  featureImg: './images/snapshoot-obj.png',
+  projectName: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+  projectLang: ['HTML', 'CSS', 'JavaScript'],
+  projectDetails: { orgnization: 'CANOPY', type: 'Back END Dev', year: 2015 },
+  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
+}, {
+  featureImg: './images/snapshoot_2.png',
+  projectName: 'Multi-Post Stories',
+  projectDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+  projectLang: ['HTML', 'CSS', 'JavaScript'],
+  projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2016 },
+  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
+}, {
+  featureImg: './images/snapshoot_3.png',
+  projectName: 'Facebook 360',
+  projectDescription: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+  projectLang: ['HTML', 'CSS', 'JavaScript'],
+  projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2017 },
+  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
+}, {
+  featureImg: './images/snapshoot_4.png',
+  projectName: 'Uber Navigation',
+  projectDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+  projectLang: ['HTML', 'CSS', 'JavaScript'],
+  projectDetails: { orgnization: 'UBER', type: 'Front End Dev', year: 2017 },
+  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
+}];
+
+projects.forEach((project, index) => {
+  const list = document.getElementById('portfolio');
+  const listItem = document.createElement('div');
+  listItem.classList.add('work_card');
+  listItem.id = `portfolio-${index + 1}`;
+  const languages = project.projectLang.map((lang) => `<li class='lang_list'>${lang}</li>`).join('');
+  listItem.innerHTML = `<img src='${project.featureImg}' alt='Recent Work' class='portfolio_work_img'>
+    <div class='project_desc'>
+        <h3 class='project_title'>${project.projectName}</h3>
+        <div class='client'>
+            <h4 class='active'>${project.projectDetails.orgnization}</h4>
+            <div class="counter"></div>
+            <h4>${project.projectDetails.type}</h4>
+            <div class="counter"></div>
+            <h4>${project.projectDetails.year}</h4>
+        </div>
+        <p class='project_summary'>${project.projectDescription}</p>
+        <ul class='project_lang'>
+          ${languages}
+        </ul>
+        <div class="call_to_action">
+        <button id='open-project-details-${index + 1}'>See Project</button>
+        </div>
+    </div>`;
+  list.appendChild(listItem);
+});
+
+// Modal Popup Starts Here
+const body = document.getElementById('body');
+projects.forEach((project, index) => {
+  const languages = project.projectLang.map((lang) => `<li class='lang_list'>${lang}</li>`).join('');
+  const modal = document.createElement('div');
+  modal.classList.add('detail-card');
+  modal.id = `detail-card-${index + 1}`;
+  modal.innerHTML = `<div class='detail-card-inner'>
+    <div class='detail-card-header'>
+        <div class='detail-card-header1'>
+            <h3 class='detail-card-heading'>${project.projectName}</h3>
+            <img src='./icons/close-icon2.png'  id='detail-card-close-${index + 1}' alt='close btn icon'>
+        </div>
+        <div>
+            <div class='works-card-client'>
+                <h4 class='active'>${project.projectDetails.orgnization}</h4>
+                <div class="counter"></div>
+                <h4>${project.projectDetails.type}</h4>
+                <div class="counter"></div>
+                <h4>${project.projectDetails.year}</h4>
+            </div>
+        </div>
+    </div>
+    <div class='detail-card-display-img-container'>
+        <img class='' src='${project.featureImg}' alt='Recent Work'>
+    </div>
+    <div class='detail-card-body'>
+      <div class='detail-card-body-left'>
+        <p class='paragraph'>${project.projectCompleteDetails}</p>      
+      </div>
+        <div class='detail-card-body-right'>
+            <ul class='detail-card-body-tags'>
+                ${languages}
+            </ul>
+            <hr style='color: #EBECF0; margin: 20px 0' />
+            <div class='detail-card-body-right-button-container'>
+                <button class='detail-card-button' src='${project.seeLive}'>See Live <img src='./icons/live.png' alt='live-source icon'></button>
+                <button class='detail-card-button'  src='${project.seeSource}'>See Source <img src='./icons/git.png' alt='github icon'></button>
+            </div>
+        </div>
+    </div>
+  </div>`;
+  body.appendChild(modal);
+});
+// Modal Popup Ends Here
+
+const openProjectDetails1 = document.getElementById('open-project-details-1');
+const openProjectDetails2 = document.getElementById('open-project-details-2');
+const openProjectDetails3 = document.getElementById('open-project-details-3');
+const openProjectDetails4 = document.getElementById('open-project-details-4');
+
+const detailCardClose1 = document.getElementById('detail-card-close-1');
+const detailCardClose2 = document.getElementById('detail-card-close-2');
+const detailCardClose3 = document.getElementById('detail-card-close-3');
+const detailCardClose4 = document.getElementById('detail-card-close-4');
+
+const detailCard1 = document.getElementById('detail-card-1');
+const detailCard2 = document.getElementById('detail-card-2');
+const detailCard3 = document.getElementById('detail-card-3');
+const detailCard4 = document.getElementById('detail-card-4');
+const contentWrap = document.querySelector('.content-wrap');
+const bodyScroll = document.querySelector('#body');
+
+// Card 1 popup opening closing starts Here
+openProjectDetails1.addEventListener('click', () => {
+  detailCard1.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
+});
+detailCardClose1.addEventListener('click', () => {
+  detailCard1.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
+});
+// Card 1 popup opening closing ends Here
+
+// Card 2 popup opening closing starts Here
+openProjectDetails2.addEventListener('click', () => {
+  detailCard2.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
+});
+detailCardClose2.addEventListener('click', () => {
+  detailCard2.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
+});
+// Card 2 popup opening closing ends Here
+
+// Card 3 popup opening closing starts Here
+openProjectDetails3.addEventListener('click', () => {
+  detailCard3.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
+});
+detailCardClose3.addEventListener('click', () => {
+  detailCard3.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
+});
+// Card 3 popup opening closing ends Here
+
+// Card 4 popup opening closing starts Here
+openProjectDetails4.addEventListener('click', () => {
+  detailCard4.classList.toggle('detail-card--show');
+  contentWrap.classList.add('blur-modal');
+  bodyScroll.classList.add('no-scroll');
+});
+detailCardClose4.addEventListener('click', () => {
+  detailCard4.classList.toggle('detail-card--show');
+  contentWrap.classList.remove('blur-modal');
+  bodyScroll.classList.remove('no-scroll');
+});
+// Card 4 popup opening closing ends Here
+
+// form-validation
+const form = document.getElementById('contact');
+form.addEventListener('submit', (event) => {
+  const email = document.getElementById('email').value;
+  const checkString = email.toLowerCase();
+  const errorDiv = document.getElementById('error-div');
+  if (!(checkString === email)) {
+    const errorShow = document.createElement('p');
+    errorShow.textContent = 'Form not submitted, email should be in lowercase.';
+    errorShow.className = 'error-text';
+    errorDiv.appendChild(errorShow);
+    event.preventDefault();
+    return false;
+  }
+
+  errorDiv.remove();
+  return true;
+});
