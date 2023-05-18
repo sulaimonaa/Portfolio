@@ -415,9 +415,12 @@
 }
 
 .detail-card-body-tags {
+  display: flex;
   flex-wrap: wrap;
   margin: 0.25em 0;
+  padding: 0;
   list-style-type: none;
+  gap: 10px;
 }
 
 .detail-card-body-tag {
@@ -441,7 +444,13 @@
 .detail-card-button {
   font-size: 15px;
   padding: 0.5em 0.75em;
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid #6070FF;
+  border-radius: 5px;
+  color: #396DF2;
 }
 
 .detail-card-button > i {
@@ -740,6 +749,14 @@
     gap: 0;
   }
 
+  .detail-card-body-left {
+    width: 70%;
+  }
+
+  .detail-card-body-right {
+    width: 30%;
+    padding: 0 15px;
+  }
   /* .work_card:nth-child(2), .work_card:nth-child(4) {
     display: flex;
     flex-direction: row-reverse;

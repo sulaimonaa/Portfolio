@@ -43,39 +43,43 @@ navMenu.addEventListener('click', () => {
     contactSection.classList.remove('blur-bg');
 });
 
-// Adding Dynamic Data to Works ul starts Here
+// Adding Dynamic Data to Works starts Here
 const projects = [{
   featureImg: './images/snapshoot_1.png',
   projectName: 'Tonic',
   projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
   projectLang: ['HTML', 'CSS', 'JavaScript'],
   projectDetails: { orgnization: 'CANOPY', type: 'Back END Dev', year: 2015 },
   seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'git@github.com:sulaimonaa/Portfolio.git',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
 }, {
   featureImg: './images/snapshoot_2.png',
   projectName: 'Multi-Post Stories',
   projectDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
   projectLang: ['HTML', 'CSS', 'JavaScript'],
   projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2016 },
   seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'git@github.com:sulaimonaa/Portfolio.git',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
 }, {
   featureImg: './images/snapshoot_3.png',
   projectName: 'Facebook 360',
   projectDescription: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
   projectLang: ['HTML', 'CSS', 'JavaScript'],
   projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2017 },
   seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'git@github.com:sulaimonaa/Portfolio.git',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
 }, {
   featureImg: './images/snapshoot_4.png',
   projectName: 'Uber Navigation',
   projectDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
   projectLang: ['HTML', 'CSS', 'JavaScript'],
   projectDetails: { orgnization: 'UBER', type: 'Front End Dev', year: 2017 },
   seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'git@github.com:sulaimonaa/Portfolio.git',
+  seeSource: 'https://github.com/sulaimonaa/Portfolio',
 }];
 
 projects.forEach((project, index) => {
@@ -132,17 +136,17 @@ projects.forEach((project, index) => {
         <img class='' src='${project.featureImg}' alt='Recent Work'>
     </div>
     <div class='detail-card-body'>
-      <div>
-        <p class='paragraph'>${project.projectDescription}</p>      
+      <div class='detail-card-body-left'>
+        <p class='paragraph'>${project.projectCompleteDetails}</p>      
       </div>
         <div class='detail-card-body-right'>
-            <ul class='d-flex detail-card-body-tags'>
+            <ul class='detail-card-body-tags'>
                 ${languages}
             </ul>
+            <hr style='color: #EBECF0; margin: 20px 0' />
             <div class='detail-card-body-right-button-container'>
-                <button class='detail-card-button' src='${project.seeLive}'>See Live <i
-                        class='fa-solid fa-arrow-up-right-from-square'></i></button>
-                <button class='detail-card-button'  src='${project.seeSource}'>See Source <i class='fa-brands fa-github'></i></button>
+                <button class='detail-card-button' src='${project.seeLive}'>See Live <img src='./icons/live.png' alt='live-source icon'></button>
+                <button class='detail-card-button'  src='${project.seeSource}'>See Source <img src='./icons/git.png' alt='github icon'></button>
             </div>
         </div>
     </div>
