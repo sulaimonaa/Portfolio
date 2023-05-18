@@ -411,6 +411,7 @@
 
 .detail-card-body {
   margin: 2em 0;
+  display: flex;
 }
 
 .detail-card-body-tags {
@@ -448,6 +449,7 @@
   font-size: 0.85em;
   color: inherit;
 }
+  
 
 /* Detail Section Endss Here */
 
