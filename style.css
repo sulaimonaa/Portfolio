@@ -69,6 +69,10 @@
     gap: 40px;
   }
 
+  .closeBtnWrap {
+    display: block;
+  }
+
   #closeBtn {
     display: none;
     margin: 20px;
@@ -87,9 +91,7 @@
     filter: blur(4px);
   }
 
-  .no-blur {
-    filter: none;
-  }
+  /* menu toggle ends here! */
 
   .nav-item {
     text-decoration: none;
@@ -529,10 +531,32 @@
     align-items: center;
     justify-content: end;
     gap: 25px;
+    margin: 0;
+  }
+
+  .closeBtnWrap {
+    display: none;
   }
 
   .navbar-show {
-    display: none;
+    display: flex;
+    position: relative;
+    background: none;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    opacity: 1;
+  }
+
+  .navbar-show .nav-list a.nav-item {
+    margin-left: 0;
+    color: #344563;
+}
+
+  .blur-bg {
+    filter: none;
   }
 
   .nav-list {
