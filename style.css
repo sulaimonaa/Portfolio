@@ -754,9 +754,13 @@
     gap: 0;
   }
 
+  .detail-card--show {
+    overflow-y: hidden;
+  }
+
   .detail-card-inner {
     gap: 15px;
-    margin: 12%;
+    margin: 3% 15%;
   }
 
   .detail-card-body-left {

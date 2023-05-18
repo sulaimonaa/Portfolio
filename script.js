@@ -45,7 +45,7 @@ navMenu.addEventListener('click', () => {
 
 // Adding Dynamic Data to Works starts Here
 const projects = [{
-  featureImg: './images/snapshoot_1.png',
+  featureImg: './images/snapshoot-obj.png',
   projectName: 'Tonic',
   projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
