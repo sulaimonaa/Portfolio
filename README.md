@@ -44,6 +44,7 @@
   <ul>
     <li>html</li>
     <li>css</li>
+    <li>JavaScript</li>
   </ul>
 </details>
 
@@ -56,6 +57,7 @@
 - **[Set up and design headline section]**
 - **[list of projects]**
 - **[language used in development]**
+- **[JavaScript for DOM manipultions creating a more user friendly effects]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +127,7 @@ If you like this project, please give your rating or suggest to me how to make i
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse team and the code reviewers
+I would like to thank Microverse team, coding partners and the code reviewers
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
