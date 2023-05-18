@@ -760,16 +760,24 @@
 
   .detail-card-inner {
     gap: 15px;
-    margin: 3% 15%;
+    margin: 2% 15%;
   }
 
+  .detail-card-heading {
+    font-size: 24px;
+  }
+
+  .detail-card-display-img-container {
+    width: 550px;
+    margin: 0 auto;
+  }
   .detail-card-body-left {
     width: 70%;
   }
 
   .detail-card-body-right {
     width: 30%;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .detail-card-body {
@@ -779,17 +787,17 @@
 
   .works-card-client h4.active,
   .works-card-client h4 {
-    font-size: 15px;
+    font-size: 12px;
+    margin: 0;
   }
 
-  /* .work_card:nth-child(2), .work_card:nth-child(4) {
-    display: flex;
-    flex-direction: row-reverse;
+  .detail-card-button {
+    font-size: 12px;
   }
 
-  .work_card:nth-child(2) img, .work_card:nth-child(4) img {
-    width: 50%;
-  } */
+  .pro-details {
+    font-size: 13px;
+  }
 
   .project_desc {
     width: 90%;
