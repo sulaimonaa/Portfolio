@@ -137,7 +137,7 @@ projects.forEach((project, index) => {
     </div>
     <div class='detail-card-body'>
       <div class='detail-card-body-left'>
-        <p class='paragraph'>${project.projectCompleteDetails}</p>      
+        <p class='pro-details'>${project.projectCompleteDetails}</p>      
       </div>
         <div class='detail-card-body-right'>
             <ul class='detail-card-body-tags'>
