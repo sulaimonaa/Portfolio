@@ -244,6 +244,7 @@ form.addEventListener('submit', (event) => {
 });
 
 // preserve data
+let contactForm;
 let contactFormData = JSON.parse(window.localStorage.getItem('contactFormData'));
 if (!contactFormData) {
   contactFormData = {
