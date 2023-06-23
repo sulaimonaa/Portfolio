@@ -160,7 +160,7 @@ const projects = [
   },
 ];
 
-projects.forEach((project, index) => {
+projects.forEach((project) => {
   const list = document.getElementById('portfolio');
   const listItem = document.createElement('div');
   listItem.classList.add('work_card');
