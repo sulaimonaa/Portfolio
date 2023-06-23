@@ -44,51 +44,133 @@ navMenu.addEventListener('click', () => {
 });
 
 // Adding Dynamic Data to Works starts Here
-const projects = [{
-  featureImg: './images/snapshoot-obj.png',
-  projectName: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
-  projectLang: ['HTML', 'CSS', 'JavaScript'],
-  projectDetails: { orgnization: 'CANOPY', type: 'Back END Dev', year: 2015 },
-  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'https://github.com/sulaimonaa/Portfolio',
-}, {
-  featureImg: './images/snapshoot_2.png',
-  projectName: 'Multi-Post Stories',
-  projectDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
-  projectLang: ['HTML', 'CSS', 'JavaScript'],
-  projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2016 },
-  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'https://github.com/sulaimonaa/Portfolio',
-}, {
-  featureImg: './images/snapshoot_3.png',
-  projectName: 'Facebook 360',
-  projectDescription: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
-  projectLang: ['HTML', 'CSS', 'JavaScript'],
-  projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2017 },
-  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'https://github.com/sulaimonaa/Portfolio',
-}, {
-  featureImg: './images/snapshoot_4.png',
-  projectName: 'Uber Navigation',
-  projectDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  projectCompleteDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
-  projectLang: ['HTML', 'CSS', 'JavaScript'],
-  projectDetails: { orgnization: 'UBER', type: 'Front End Dev', year: 2017 },
-  seeLive: 'https://sulaimonaa.github.io/Portfolio/',
-  seeSource: 'https://github.com/sulaimonaa/Portfolio',
-}];
+const projects = [
+  {
+    featureImg: './images/snapshoot-obj.png',
+    projectName: 'Tonic',
+    projectDescription:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    projectCompleteDetails:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: { orgnization: 'CANOPY', type: 'Back END Dev', year: 2015 },
+    seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+    seeSource: 'https://github.com/sulaimonaa/Portfolio',
+  },
+  {
+    featureImg: './images/snapshoot_2.png',
+    projectName: 'Multi-Post Stories',
+    projectDescription:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    projectCompleteDetails:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: {
+      orgnization: 'FACEBOOK',
+      type: 'Full Stack Dev',
+      year: 2016,
+    },
+    seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+    seeSource: 'https://github.com/sulaimonaa/Portfolio',
+  },
+  {
+    featureImg: './images/snapshoot_3.png',
+    projectName: 'Facebook 360',
+    projectDescription:
+      'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    projectCompleteDetails:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: {
+      orgnization: 'FACEBOOK',
+      type: 'Full Stack Dev',
+      year: 2017,
+    },
+    seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+    seeSource: 'https://github.com/sulaimonaa/Portfolio',
+  },
+  {
+    featureImg: './images/snapshoot_4.png',
+    projectName: 'Uber Navigation',
+    projectDescription:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    projectCompleteDetails:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: { orgnization: 'UBER', type: 'Front End Dev', year: 2017 },
+    seeLive: 'https://sulaimonaa.github.io/Portfolio/',
+    seeSource: 'https://github.com/sulaimonaa/Portfolio',
+  },
+  {
+    featureImg: './images/todo.png',
+    projectName: 'Todo List App',
+    projectDescription:
+      'This is a simple to-do list application where a user can add, remove, edit task based on events.',
+    projectCompleteDetails:
+      'This is a simple to-do list application where a user can add, remove, edit task based on events. This project is developed using HTML, CSS, JavaScript, and follows some of the best practices including DRY, KISS, YAGNI approach on the JavaScript.',
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: { orgnization: 'SELF', type: 'Front End Dev', year: 2023 },
+    seeLive: 'https://sulaimonaa.github.io/to-do-list/',
+    seeSource: 'https://github.com/sulaimonaa/to-do-list',
+  },
+  {
+    featureImg: './images/commission-calc.png',
+    projectName: 'Forex Broker Commission Calculator',
+    projectDescription:
+      "A simple forex partnership commission calculator that calculates user's current commission based on the downline number of lots traded.",
+    projectCompleteDetails:
+      "A simple forex partnership commission calculator that calculates user's current commission based on the downline number of lots traded. The calculator is based on a formular C = ((lots traded) / 100) * n where n is the type of account",
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: {
+      orgnization: 'RALLYTRADE',
+      type: 'Front End Dev',
+      year: 2022,
+    },
+    seeLive:
+      'https://fxrallyadministrator.com/frontend/ralcop/ibcalculator.html',
+    seeSource: 'https://github.com/sulaimonaa/Commission-Calculator',
+  },
+  {
+    featureImg: './images/referral.png',
+    projectName: 'Referral System',
+    projectDescription:
+      'The is a referral system project. User get to register, get a referral link and when the referral link is used to register another user.',
+    projectCompleteDetails:
+      'The is a referral system project. User get to register, get a referral link and when the referral link is used to register another user, the user becomes a child level account of the user whose link is used in registration. Language used: PHP, HTML5, CSS, JavaScript Database: mySQL.',
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: {
+      orgnization: 'KAPITAL TRUST',
+      type: 'Front End Dev',
+      year: 2022,
+    },
+    seeLive: 'https://partner.kapitalcaretrust.com/',
+    seeSource: 'https://github.com/sulaimonaa/partner.kapital',
+  },
+  {
+    featureImg: './images/awesome-books.png',
+    projectName: 'Awesome Book App',
+    projectDescription:
+      'This is simple application that keeps update of book records. User can add, remove books with title and author.',
+    projectCompleteDetails:
+      'This is simple application that keeps update of book records. User can add, remove books with title and author. The project is design with HTML5, CSS, and JavaScript.',
+    projectLang: ['HTML', 'CSS', 'JavaScript'],
+    projectDetails: { orgnization: 'SELF', type: 'Front End Dev', year: 2023 },
+    seeLive: 'https://sulaimonaa.github.io/awesome-books-es6/',
+    seeSource: 'https://github.com/sulaimonaa/awesome-books-es6',
+  },
+];
 
 projects.forEach((project, index) => {
   const list = document.getElementById('portfolio');
   const listItem = document.createElement('div');
   listItem.classList.add('work_card');
   listItem.id = `portfolio-${index + 1}`;
-  const languages = project.projectLang.map((lang) => `<li class='lang_list'>${lang}</li>`).join('');
-  listItem.innerHTML = `<img src='${project.featureImg}' alt='Recent Work' class='portfolio_work_img'>
+  const languages = project.projectLang
+    .map((lang) => `<li class='lang_list'>${lang}</li>`)
+    .join('');
+  listItem.innerHTML = `<img src='${
+    project.featureImg
+  }' alt='Recent Work' class='portfolio_work_img'>
     <div class='project_desc'>
         <h3 class='project_title'>${project.projectName}</h3>
         <div class='client'>
@@ -112,7 +194,9 @@ projects.forEach((project, index) => {
 // Modal Popup Starts Here
 const body = document.getElementById('body');
 projects.forEach((project, index) => {
-  const languages = project.projectLang.map((lang) => `<li class='lang_list'>${lang}</li>`).join('');
+  const languages = project.projectLang
+    .map((lang) => `<li class='lang_list'>${lang}</li>`)
+    .join('');
   const modal = document.createElement('div');
   modal.classList.add('detail-card');
   modal.id = `detail-card-${index + 1}`;
@@ -120,7 +204,9 @@ projects.forEach((project, index) => {
     <div class='detail-card-header'>
         <div class='detail-card-header1'>
             <h3 class='detail-card-heading'>${project.projectName}</h3>
-            <img src='./icons/close-icon2.png'  id='detail-card-close-${index + 1}' alt='close btn icon'>
+            <img src='./icons/close-icon2.png'  id='detail-card-close-${
+              index + 1
+            }' alt='close btn icon'>
         </div>
         <div>
             <div class='works-card-client'>
@@ -145,8 +231,12 @@ projects.forEach((project, index) => {
             </ul>
             <hr style='color: #EBECF0; margin: 20px 0' />
             <div class='detail-card-body-right-button-container'>
-                <button class='detail-card-button' src='${project.seeLive}'>See Live <img src='./icons/live.png' alt='live-source icon'></button>
-                <button class='detail-card-button'  src='${project.seeSource}'>See Source <img src='./icons/git.png' alt='github icon'></button>
+                <button class='detail-card-button' src='${
+                  project.seeLive
+                }'>See Live <img src='./icons/live.png' alt='live-source icon'></button>
+                <button class='detail-card-button'  src='${
+                  project.seeSource
+                }'>See Source <img src='./icons/git.png' alt='github icon'></button>
             </div>
         </div>
     </div>
@@ -245,7 +335,9 @@ form.addEventListener('submit', (event) => {
 
 // preserve data
 let contactForm;
-let contactFormData = JSON.parse(window.localStorage.getItem('contactFormData'));
+let contactFormData = JSON.parse(
+  window.localStorage.getItem('contactFormData')
+);
 if (!contactFormData) {
   contactFormData = {
     name: '',
@@ -262,6 +354,9 @@ for (let i = 0; i < keys.length; i += 1) {
 for (let i = 0; i < contactForm.length; i += 1) {
   contactForm.elements[i].addEventListener('change', (e) => {
     contactFormData[`${contactForm.elements[i].name}`] = e.target.value;
-    window.localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
+    window.localStorage.setItem(
+      'contactFormData',
+      JSON.stringify(contactFormData)
+    );
   });
 }
