@@ -205,8 +205,8 @@ projects.forEach((project, index) => {
         <div class='detail-card-header1'>
             <h3 class='detail-card-heading'>${project.projectName}</h3>
             <img src='./icons/close-icon2.png'  id='detail-card-close-${
-              index + 1
-            }' alt='close btn icon'>
+  index + 1
+}' alt='close btn icon'>
         </div>
         <div>
             <div class='works-card-client'>
@@ -232,11 +232,11 @@ projects.forEach((project, index) => {
             <hr style='color: #EBECF0; margin: 20px 0' />
             <div class='detail-card-body-right-button-container'>
                 <button class='detail-card-button' src='${
-                  project.seeLive
-                }'>See Live <img src='./icons/live.png' alt='live-source icon'></button>
+  project.seeLive
+}'>See Live <img src='./icons/live.png' alt='live-source icon'></button>
                 <button class='detail-card-button'  src='${
-                  project.seeSource
-                }'>See Source <img src='./icons/git.png' alt='github icon'></button>
+  project.seeSource
+}'>See Source <img src='./icons/git.png' alt='github icon'></button>
             </div>
         </div>
     </div>
@@ -336,7 +336,7 @@ form.addEventListener('submit', (event) => {
 // preserve data
 let contactForm;
 let contactFormData = JSON.parse(
-  window.localStorage.getItem('contactFormData')
+  window.localStorage.getItem('contactFormData'),
 );
 if (!contactFormData) {
   contactFormData = {
@@ -356,7 +356,7 @@ for (let i = 0; i < contactForm.length; i += 1) {
     contactFormData[`${contactForm.elements[i].name}`] = e.target.value;
     window.localStorage.setItem(
       'contactFormData',
-      JSON.stringify(contactFormData)
+      JSON.stringify(contactFormData),
     );
   });
 }
